@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight, MapPin, GraduationCap } from "lucide-react";
+import Link from "next/link";
 
 const stack = ["JavaScript", "TypeScript", "Python", "React", "Next.js"];
 
@@ -104,9 +105,11 @@ export default function Hero() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
           >
-            <Button size="lg" className="gap-2 w-full sm:w-auto">
-              View My Work <ArrowRight className="h-4 w-4" />
-            </Button>
+            <Link href="#projects">
+              <Button size="lg" className="gap-2 w-full sm:w-auto">
+                View My Work <ArrowRight className="h-4 w-4" />
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div
@@ -114,9 +117,11 @@ export default function Hero() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
           >
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              Contact Me
-            </Button>
+            <Link href="#contact">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                Contact Me
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>
