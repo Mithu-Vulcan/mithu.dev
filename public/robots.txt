@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mithu.dev
+
+# Sitemaps
+Sitemap: https://mithu.dev/sitemap.xml
