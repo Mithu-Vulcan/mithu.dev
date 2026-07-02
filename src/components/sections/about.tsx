@@ -155,10 +155,6 @@ export default function About() {
                 <Separator/>
 
                 <motion.div variants={fadeUp} transition={{ duration: 0.5 }} className="space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                        I&apos;m open to collaborations, freelance work, and new opportunities.
-                        If you have something in mind, I&apos;d love to hear about it.
-                    </p>
                     <motion.div
                       whileHover={{ scale: 1.03 }}
                       whileTap={{ scale: 0.97 }}
